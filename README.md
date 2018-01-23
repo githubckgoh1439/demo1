@@ -56,7 +56,7 @@ You can test them using postman or any other rest client.
 ----------------------------------------------------------------------------------------
 
 Step-1.  
-Download this mysql.zip from github and upload into docker-host-path where : 
+Download this mysql.zip from github then unzip and upload into docker-host-path where : 
 
 - /home/demo1/
 
