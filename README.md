@@ -58,7 +58,7 @@ You can test them using postman or any other rest client.
 Step-1.  
 Download this mysql.zip from github and upload into docker-host-path where : 
 
-- /home/demo1/tmp/
+- /home/demo1/
 
 	
 Step-2. 
@@ -96,7 +96,7 @@ Download from Dockerhub using below CLI :
 
 Step-4. 
 
-Download this mysql.zip from github and upload into docker-host-path where /home/demo1/ then run below CLI :
+Download this docker-compose.yml from github and upload into docker-host-path where /home/demo1/ then run below CLI :
 
  - docker-compose up -d
 
@@ -105,12 +105,14 @@ Download this mysql.zip from github and upload into docker-host-path where /home
 
    root@node03:~# docker ps
 
-  CONTAINER ID        IMAGE                                                  COMMAND                  CREATED             STATUS                    PORTS                    NAMES
+   CONTAINER ID        IMAGE                                                  COMMAND                  CREATED             
+   STATUS                    PORTS                    NAMES
 
- 98390d086353        dockerckgoh1439/demo01:0.0.2                           "java -jar app.jar"      42 
-seconds ago      Up 40 seconds             0.0.0.0:8181->8181/tcp   student_dockerhub01
+   98390d086353        dockerckgoh1439/demo01:0.0.2                           "java -jar app.jar"      42 
+   seconds ago      Up 40 seconds             0.0.0.0:8181->8181/tcp   student_dockerhub01
 
- c9d29d5c87fc        dockerckgoh1439/mysql-demo1:latest                     "/entrypoint.sh my..."   43 seconds ago      Up 41 seconds (healthy)   0.0.0.0:3306->3306/tcp   mysql_dockerhub01
+   c9d29d5c87fc        dockerckgoh1439/mysql-demo1:latest                     "/entrypoint.sh my..."   43 
+   seconds ago      Up 41 seconds (healthy)   0.0.0.0:3306->3306/tcp   mysql_dockerhub01
 
 
 
@@ -126,7 +128,7 @@ Open new browser and go to :
 5. Demo Purpose - using postman
 ----------------------------
 
-1.	Method [POST] : ADD 
+1. Method [POST] : ADD 
 
    - http://cubemulus.com:8181/school/students/
 
@@ -148,7 +150,4 @@ Open new browser and go to :
  - http://cubemulus.com:8181/school/students/1
 
   - {"studentCode" : "id_1", "name": "name1", "ic": "ic_1", "age": "11", "sex": "M", "phone": "0312349999", "address": "DESA JAYA", "year": "YEAR-1", "studentClass": "class_blue", "emergencyContact": "mum"}
-
-
-
 
